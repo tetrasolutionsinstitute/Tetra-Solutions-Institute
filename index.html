@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetra Solutions Institute | Unlock Your Tech Potential</title>
+    <meta name="description"
+        content="Learn high-demand digital skills and transform your career in 40 days with Tetra Solutions Institute.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="dark-theme">
+    <!-- Ramzan Special Popup -->
+    <div id="ramdan-popup" class="popup-overlay">
+        <div class="popup-content ramdan-theme">
+            <button class="close-popup" onclick="closeRamdanPopup()">&times;</button>
+            <div class="ramdan-header">
+                <i class="fas fa-moon moon-icon"></i>
+                <span class="offer-label">SPECIAL RAMZAN OFFER</span>
+            </div>
+            <h2>Ramzan Kareem <span class="gold-text">Mubarak!</span></h2>
+            <p>Learn 1 Skill, Get 2 Skills <span class="gold-text">FREE!</span> This offer ends in:</p>
+
+            <div class="countdown-timer" id="ramdan-countdown">
+                <div class="timer-block">
+                    <span id="days">00</span>
+                    <label>Days</label>
+                </div>
+                <div class="timer-block">
+                    <span id="hours">00</span>
+                    <label>Hours</label>
+                </div>
+                <div class="timer-block">
+                    <span id="minutes">00</span>
+                    <label>Min</label>
+                </div>
+                <div class="timer-block">
+                    <span id="seconds">00</span>
+                    <label>Sec</label>
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <a href="#courses" class="btn-primary gold-btn" onclick="closeRamdanPopup()">Explore Offer</a>
+                <p class="auto-close-msg">Closing in <span id="auto-close-timer">10</span>s...</p>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">
+                <img src="https://drive.google.com/thumbnail?id=1eeiOOfGxmr4YHhXOGsmQ2AJ54K3DIzX3&sz=w1000"
+                    alt="Tetra Solutions Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#ceo">CEO</a></li>
+                <li><a href="#method">Method</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-text">Sign In</a>
+                <a href="#contact" class="btn-primary">Get Started</a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="center-content">
+                    <span class="badge fade-in-out">Most Enrolled Institute in 2025</span>
+                    <h1 class="fade-in-out">Unlock Your <br><span class="gradient-text">Tech Potential</span></h1>
+                    <p class="fade-in-out">Tetra Solutions provides you with the skills, tools, and mentorship you need
+                        to thrive in the digital age. Start your journery today and Earn Money.</p>
+                    <div class="hero-btns fade-in-out">
+                        <a href="#contact" class="btn-primary">Enroll Now <i class="fas fa-arrow-right"></i></a>
+                        <a href="#method" class="btn-secondary"><i class="fas fa-play"></i> Watch Course Overview</a>
+                    </div>
+                </div>
+                <div class="stats-hero fade-in-out">
+                    <div class="stat">
+                        <h3 class="counter" data-target="50" data-suffix="K+">0</h3>
+                        <p>Students Trained</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3 class="counter" data-target="40" data-suffix=" Days">0</h3>
+                        <p>Learning Track</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="counter" data-target="100" data-suffix="%">0</h3>
+                        <p>Sucess Rate</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3 class="counter" data-target="100" data-suffix="%">0</h3>
+                        <p>Practical Focus</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ceo" class="ceo">
+            <div class="container mobile-stack">
+                <div class="ceo-image fade-in-out">
+                    <div class="image-wrapper">
+                        <img src="https://drive.google.com/thumbnail?id=1s5QLa6eCjjSUfCvEM8EVMlZado7kUOUp&sz=w1000"
+                            alt="CEO Portrait" class="ceo-portrait">
+                        <div class="image-accent"></div>
+                        <div class="google-badge-floating">
+                            <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.64 9.204c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M3.964 10.71a5.41 5.41 0 0 1 0-3.42V4.958H.957a8.993 8.993 0 0 0 0 8.084l3.007-2.332z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M9 3.579c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 7.29c.708-2.127 2.692-3.711 5.036-3.711z"
+                                    fill="#EA4335" />
+                            </svg>
+                            <span>Google Certified</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ceo-content fade-in-out">
+                    <span class="sub-title-alt"><i class="fas fa-certificate"></i> GOOGLE CERTIFIED EXPERT</span>
+                    <h2 class="section-title-large">Visionary Leadership <br><span class="gradient-text">& Industry
+                            Expertise</span></h2>
+                    <p class="description-dim">"Tetra Solutions is a professional training institute offering 40-day
+                        intensive courses in Digital Marketing, AI Creation & Generation, and iPhone & Android Software.
+                        Led by Google Certified expert Mian Arslan with 15+ years of experience, we provide practical,
+                        industry-focused training to help students build successful careers in the digital world."</p>
+                    <div class="ceo-stats-mini">
+                        <div class="mini-stat">
+                            <span>15+</span>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="mini-stat">
+                            <span>6+</span>
+                            <p>Global Certs</p>
+                        </div>
+                    </div>
+                    <div class="ceo-signature">
+                        <h4>Mian Arslan</h4>
+                        <p>Founder & CEO, Tetra Solutions</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificate Slider -->
+            <div class="container certifications-wrapper fade-in-out">
+                <div class="slider-header">
+                    <h3>Professional Certifications</h3>
+                </div>
+                <div class="cert-slider-outer">
+                    <div class="cert-slider-container">
+                        <div class="cert-track" id="cert-track">
+                            <div class="cert-card">
+                                <img src="https://drive.google.com/thumbnail?id=1FJhIqdfOA5B35briczrwJ54xJVzZSozM&sz=w1000"
+                                    alt="Google Data Analytics Certificate">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="courses">
+            <div class="container">
+                <div class="section-header-split">
+                    <div class="header-left">
+                        <span class="sub-title-alt fade-in-out">EXPLORE PROGRAMS</span>
+                        <h2 class="fade-in-out section-title-large">Master the Most <br>In-Demand Skills</h2>
+                        <p class="fade-in-out description-dim">"Tetra Solutions offers a 40-day professional training
+                            program where you will learn Digital Marketing, AI Creation & Generation, and iPhone &
+                            Android Software with practical experience. Our goal is to equip you with modern skills that
+                            help you start your career or online earning journey."</p>
+                    </div>
+                    <div class="header-right">
+                        <a href="#" class="btn-link-alt fade-in-out">View All Tracks <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="mega-offer-banner fade-in-out">
+                    <div class="offer-content">
+                        <div class="offer-badge">MEGA DEAL</div>
+                        <h2>Learn 1 Skill, Get 2 Skills <span class="highlight">FREE!</span></h2>
+                        <p>Unlock your future with our exclusive bundle offer. Master 3 premium skills for the price of
+                            one.</p>
+                    </div>
+                    <div class="offer-price">
+                        <span class="fee-label">TOTAL FEES</span>
+                        <div class="price-value">RS. 40,000/-</div>
+                        <p class="installment-text"
+                            style="color: var(--secondary); font-size: 0.85rem; margin-bottom: 1rem; font-weight: 600;">
+                            3 Din Installment Plan Available</p>
+                        <a href="#contact" class="btn-primary-alt">Claim Offer Now</a>
+                    </div>
+                </div>
+
+                <div class="course-grid">
+                    <div class="course-card fade-in-out">
+                        <div class="card-badge">NEW</div>
+                        <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
+                        <h3>Digital Media Marketing </h3>
+                        <p>Advance your career with Content Marketing, and social media analytics.</p>
+                    </div>
+
+                    <div class="course-card fade-in-out">
+                        <div class="card-badge">HOT</div>
+                        <div class="card-icon"><i class="fas fa-robot"></i></div>
+                        <h3>AI Video Generation & Content Creation</h3>
+                        <p>Unlock the power of AI to automate business processes and stay ahead of the curve.</p>
+                    </div>
+                    <div class="course-card fade-in-out">
+                        <div class="card-badge">NEW</div>
+                        <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Advance Mobile Phone Software Skills</h3>
+                        <p>Iphone (IOS & Android) Software training.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="beyond" class="beyond">
+            <div class="container">
+                <div class="split-layout-mastery">
+                    <div class="mastery-content">
+                        <span class="sub-title-alt fade-in-out">WHY CHOOSE US?</span>
+                        <h2 class="fade-in-out section-title-large">Beyond Just Learning. <br><span
+                                class="blue-accent-text">Mastery.</span></h2>
+
+                        <div class="feature-list-alt">
+                            <div class="feat-item-alt fade-in-out">
+                                <div class="feat-icon-box"><i class="fas fa-bolt"></i></div>
+                                <div class="feat-text">
+                                    <h4>Hyper-Accelerated Learning</h4>
+                                    <p>Our 40-day intensive model is optimized for maximum retention and rapid skill
+                                        acquisition.</p>
+                                </div>
+                            </div>
+                            <div class="feat-item-alt fade-in-out">
+                                <div class="feat-icon-box"><i class="fas fa-bullseye"></i></div>
+                                <div class="feat-text">
+                                    <h4>Industry-First Projects</h4>
+                                    <p>Stop building todo-lists. Build production-grade software that recruiters
+                                        actually care about.</p>
+                                </div>
+                            </div>
+                            <div class="feat-item-alt fade-in-out">
+                                <div class="feat-icon-box"><i class="fas fa-award"></i></div>
+                                <div class="feat-text">
+                                    <h4>Lifetime Career Support</h4>
+                                    <p>Access to our network of 500+ hiring partners and personalized resume reviews.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="journey-card-container fade-in-out">
+                        <div class="journey-card">
+                            <h3>The 40-Day Journey</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-number">1</div>
+                                    <div class="timeline-content">
+                                        <h5>Day 1-10: Foundation</h5>
+                                        <p>Master the core principles and languages with intensive daily sprints.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-number">2</div>
+                                    <div class="timeline-content">
+                                        <h5>Day 11-25: Real World</h5>
+                                        <p>Build complex applications using industry-standard tools and frameworks.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-number">3</div>
+                                    <div class="timeline-content">
+                                        <h5>Day 26-35: Specialization</h5>
+                                        <p>Dive deep into your chosen track with expert-led masterclasses.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-number">4</div>
+                                    <div class="timeline-content">
+                                        <h5>Day 36-40: Final Launch</h5>
+                                        <p>Prepare your portfolio and undergo simulated technical interviews.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="method" class="method">
+            <div class="container">
+                <div class="section-header-centered fade-in-out">
+                    <span class="sub-title-alt">INSIDE THE PROGRAM</span>
+                    <h2 class="section-title-large">Experience the Tetra Method</h2>
+                </div>
+
+                <div class="video-main-container fade-in-out">
+                    <div class="video-mockup" id="main-video-player">
+                        <div class="video-overlay" onclick="playMainVideo()"
+                            style="background-image: url('https://drive.google.com/thumbnail?id=1KQdtem6MY7qtPN9BdYsRF1cRlH356wbx&sz=w1000'); background-size: cover; background-position: center;">
+                            <div class="play-btn-large">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <h3>Watch Course Overview</h3>
+                            <p>TETRA SOLUTIONS INTRODUCTION</p>
+                        </div>
+                        <!-- Placeholder for user's video link -->
+                        <div id="video-iframe-holder"></div>
+                    </div>
+                </div>
+
+                <div class="method-features fade-in-out">
+                    <div class="method-feat">
+                        <div class="feat-line"></div>
+                        <p>INSTRUCTOR-LED GUIDANCE</p>
+                    </div>
+                    <div class="method-feat">
+                        <div class="feat-line"></div>
+                        <p>REAL-WORLD PROJECT FOCUS</p>
+                    </div>
+                    <div class="method-feat">
+                        <div class="feat-line"></div>
+                        <p>CAREER TRANSFORMATION OPS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interviews Section -->
+        <section id="interviews" class="interviews">
+            <div class="container">
+                <div class="section-header-centered fade-in-out">
+                    <span class="sub-title-alt">SUCCESS INTERVIEWS</span>
+                    <h2 class="section-title-large">600+ interviews in different channels at Pakistan</h2>
+                </div>
+                <div class="interviews-grid fade-in-out">
+                    <div class="video-card-mini" data-video-id="1KQdtem6MY7qtPN9BdYsRF1cRlH356wbx"
+                        onclick="playInPlace(this)">
+                        <div class="video-thumb"
+                            style="background-image: url('https://drive.google.com/thumbnail?id=1KQdtem6MY7qtPN9BdYsRF1cRlH356wbx&sz=w1000');">
+                            <div class="play-icon-small"><i class="fas fa-play"></i></div>
+                        </div>
+                    </div>
+                    <div class="video-card-mini" data-video-id="1WF1uyjBScIMO3N3phIvQvwawcpqgiAfA"
+                        onclick="playInPlace(this)">
+                        <div class="video-thumb"
+                            style="background-image: url('https://drive.google.com/thumbnail?id=1WF1uyjBScIMO3N3phIvQvwawcpqgiAfA&sz=w1000');">
+                            <div class="play-icon-small"><i class="fas fa-play"></i></div>
+                        </div>
+                    </div>
+                    <div class="video-card-mini" data-video-id="1Qua4JkLTgmbXU2q_d_QxfUEdSumBvZn7"
+                        onclick="playInPlace(this)">
+                        <div class="video-thumb"
+                            style="background-image: url('https://drive.google.com/thumbnail?id=1Qua4JkLTgmbXU2q_d_QxfUEdSumBvZn7&sz=w1000');">
+                            <div class="play-icon-small"><i class="fas fa-play"></i></div>
+                        </div>
+                    </div>
+                    <div class="video-card-mini" data-video-id="10E1jWh8wDiJqHBtM9rofOtd8GZ2PDHTl"
+                        onclick="playInPlace(this)">
+                        <div class="video-thumb"
+                            style="background-image: url('https://drive.google.com/thumbnail?id=10E1jWh8wDiJqHBtM9rofOtd8GZ2PDHTl&sz=w1000');">
+                            <div class="play-icon-small"><i class="fas fa-play"></i></div>
+                        </div>
+                    </div>
+                    <div class="video-card-mini" data-video-id="1wWBIa9IPBJXn8tIyC2fuBh1fBg7yoz2k"
+                        onclick="playInPlace(this)">
+                        <div class="video-thumb"
+                            style="background-image: url('https://drive.google.com/thumbnail?id=1wWBIa9IPBJXn8tIyC2fuBh1fBg7yoz2k&sz=w1000');">
+                            <div class="play-icon-small"><i class="fas fa-play"></i></div>
+                        </div>
+                    </div>
+                    <div class="video-card-mini" data-video-id="1AJhjEcxrTySM0lLUflnucsXDEQVuDM9p"
+                        onclick="playInPlace(this)">
+                        <div class="video-thumb"
+                            style="background-image: url('https://drive.google.com/thumbnail?id=1AJhjEcxrTySM0lLUflnucsXDEQVuDM9p&sz=w1000');">
+                            <div class="play-icon-small"><i class="fas fa-play"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <div class="section-header-centered fade-in-out">
+                    <span class="sub-title-alt">TESTIMONIALS</span>
+                    <h2 class="section-title-large">What Our Students Say</h2>
+                </div>
+                <div class="reviews-grid fade-in-out">
+                    <div class="review-card-premium">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"I joined this institute for the 40 Days Digital Marketing and AI course
+                            and my experience was amazing. The trainer explained everything step by step with practical
+                            examples. Now I can run ads, create AI content, and manage online work confidently."</p>
+                        <div class="review-user">
+                            <img src="https://drive.google.com/thumbnail?id=188IG-gM5U1wL7h1_fD6AAY5eXcMu8S-2&sz=w400"
+                                alt="Student">
+                            <div class="user-info">
+                                <h5>Ali Hassan</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card-premium">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"I completed the 40 days course and learned many valuable skills. Now I
+                            can create AI images, manage social media marketing and understand Android software."</p>
+                        <div class="review-user">
+                            <img src="https://drive.google.com/thumbnail?id=1Wmx1pYEUSeAIehv8KRa7IWl1AMUxjCXN&sz=w400"
+                                alt="Student">
+                            <div class="user-info">
+                                <h5>Hussnain Khan</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card-premium">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"The teachers are very supportive and explain everything from basic to
+                            advanced level. This course helped me start my online earning journey.</p>
+                        <div class="review-user">
+                            <img src="https://drive.google.com/thumbnail?id=1kZex7vM-N4L4AfmYJWo6-b0QPP5ymOzI&sz=w400"
+                                alt="Student">
+                            <div class="user-info">
+                                <h5>Rabia Malik</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card-premium">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="review-text">"I highly recommend this institute for anyone who wants to learn Digital
+                            Marketing, AI Content Creation and Mobile Software skills in a short time."</p>
+                        <div class="review-user">
+                            <img src="https://drive.google.com/thumbnail?id=1fe3JoUVALmNHZ22kM9PDXYTXqhU7mAmE&sz=w400"
+                                alt="Student">
+                            <div class="user-info">
+                                <h5>Maria Ahmed</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="ecosystem" class="ecosystem">
+            <div class="container">
+                <div class="ecosystem-box fade-in-out">
+                    <h2 class="gradient-text">Empowering Pakistan's Tech Ecosystem</h2>
+                    <p>Tetra Solutions is committed to creating a sustainable digital economy by training thousands of
+                        professionals who contribute to the global market and local growth.</p>
+                    <div class="eco-stats">
+                        <div class="eco-stat"><span class="counter" data-target="5000" data-suffix="+">0</span>
+                            <p>Successful Alumni</p>
+                        </div>
+                        <div class="eco-stat"><span class="counter" data-target="40" data-suffix=" Days">0</span>
+                            <p>Transformation</p>
+                        </div>
+                        <div class="eco-stat"><span class="counter" data-target="100" data-suffix="%">0</span>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="enrollment-card fade-in-out">
+                    <div class="enroll-left">
+                        <h2 class="enroll-title">Start Your 40-Day Journey</h2>
+                        <p class="enroll-desc">Ready to transform your career? Fill out the form and secure your spot in
+                            the next batch. Our limited seats ensure personalized attention for every student.</p>
+
+                        <ul class="enroll-features">
+                            <li><span class="feat-dot"></span> Live Interactive Sessions</li>
+                            <li><span class="feat-dot"></span> Dedicated Mentor Support</li>
+                            <li><span class="feat-dot"></span> Hands-on Project Experience</li>
+                            <li><span class="feat-dot"></span> Career Placement Assistance</li>
+                        </ul>
+                    </div>
+
+                    <div class="enroll-right">
+                        <form class="enroll-form">
+                            <div class="form-group-alt">
+                                <label>Full Name</label>
+                                <div class="input-wrapper">
+                                    <i class="far fa-user"></i>
+                                    <input type="text" placeholder="John Doe">
+                                </div>
+                            </div>
+                            <div class="form-group-alt">
+                                <label>Email Address</label>
+                                <div class="input-wrapper">
+                                    <i class="far fa-envelope"></i>
+                                    <input type="email" placeholder="john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group-alt">
+                                <label>Phone Number</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <input type="tel" placeholder="+92 333 0000000">
+                                </div>
+                            </div>
+                            <div class="form-group-alt">
+                                <label>Preferred Course</label>
+                                <div class="input-wrapper">
+                                    <select id="course-select" required>
+                                        <option value="" disabled selected>Select a course</option>
+                                        <option>Digital Marketing Mastery</option>
+                                        <option>AI Business & Generations</option>
+                                        <option>Android & iPhone Development</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down select-icon"></i>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-enroll-primary">Enroll Now</button>
+                            <p class="form-fine-print">By clicking "Enroll Now", you agree to our <a href="#">Terms of
+                                    Service</a> and <a href="#">Privacy Policy</a>.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo">
+                    <img src="https://drive.google.com/thumbnail?id=1eeiOOfGxmr4YHhXOGsmQ2AJ54K3DIzX3&sz=w1000"
+                        alt="Tetra Solutions Logo">
+                </a>
+                <p>Empowering the next generation of tech professionals through intensive, project-driven education.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>CONTACT US</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-phone-alt"></i> +92 333 4574281</li>
+                    <li><i class="far fa-envelope"></i> admissions@tetrasolutions.com</li>
+                    <li><i class="fas fa-globe"></i> tetrasolutionsinstitute.online</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Office 12, Tech Hub Plaza, Lahore, Pakistan</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>RESOURCES</h4>
+                <ul>
+                    <li><a href="#">Curriculum</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                    <li><a href="#">Technical Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>SUBSCRIBE</h4>
+                <p>Get the latest course updates and tech news.</p>
+                <form id="newsletter-form" class="newsletter-group">
+                    <input type="email" placeholder="email@example.com" required>
+                    <button type="submit" class="newsletter-btn">Join Newsletter</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Tetra Solutions. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923334574281?text=Hi%20Tetra%20Solutions!%20I'm%20interested%20in%20your%20courses."
+        class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="modal-backdrop" onclick="closeVideoModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeVideoModal()">&times;</button>
+            <div class="modal-video-container">
+                <div id="modal-iframe-holder"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome (ensure it's included) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
